@@ -65,6 +65,8 @@ eatPlant ? console.log("herbivores") : "undefined"
 
 
 
+
+
 // reverse function 
 
 function reverse(n) {
@@ -106,3 +108,16 @@ function roundIt(n){
 }
 
 console.log(roundIt(345.235))
+
+
+//making triangle with using javascript
+let x = 4;
+for(let i =0; i<=x;i++){
+    let row = ""
+    for(let j=0;j<=i;j++){
+        row += "*"
+    }
+    console.log(row)
+
+    
+}
