@@ -43,7 +43,97 @@ let obj = {name : 'didier',
            price : 244
 }
 
+    function highAndLow(numbers){
+  // ...numbers;
+  const final =  numbers.split(" ").map(element => Number(element)).
+  sort((a,b)=> b-a);
+  const min = final[0]
+  const max = final[final.length -1]
+  const newArr = [min,max].map(element=> String(element)).join(" ")
+  return newArr;
+
+}
+
+console.log(highAndLow("1 2 8 9 0 12")); // return "5 1")
+
+// Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+
+// The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+
+// Mind the input validation.
+
+function sumArray(array) {
+    if(array.length >2){
+
     
+     array.sort((a,b)=>a-b).pop()
+     array.shift()
+     return array.reduce((a,b)=> a+b)
+    }else{
+        return 0
+    }
+  
+}
+
+console.log(sumArray([1,3]))
+
+function digitize(n) {
+  //code here
+  
+  return Number(String(n).split("").slice().sort((a,b)=> a-b).join(""))
+}
+
+console.log(digitize(32426))
+
+
+// Create the function that takes as a parameter a sequence of numbers represented as strings and outputs a sequence of numbers.
+
+// ie:["1", "2", "3"] to [1, 2, 3]
+
+function toNumberArray(stringarray){
+
+    return stringarray.map(Number)
+}
+
+console.log(toNumberArray(['1','2','3','4']))
+
+
+function greet(name, callback) {
+  console.log('Hello ' + name);
+  callback();
+}
+greet('Didier', () => console.log('Welcome!'));
+
+
+
+//understanding the call
+
+
+function hey (){
+    console.log('hello '+ this.name)
+}
+const person = {name : 'didier'};
+
+hey.call(person)
+
+
+
+
+
+function solution(number){
+    let sum = [];
+    for(let i = number - 1; i > 0; i--){
+        if(i % 3 ===0 || i % 5 === 0){
+            sum.push(i)
+        }
+
+    }
+    return sum.reduce((a, b) => a +b);
+
+}
+console.log(solution(16))
+
+
 
 //  }
 
