@@ -1,4 +1,7 @@
 
+
+
+
 function isIsogram(str){
          let lower= str.toLowerCase()  // all lower letter
   
@@ -12,7 +15,7 @@ function isIsogram(str){
 
 }
 
-//another way
+//another way of checking duplicate
 function isIsogram(str){
     let lower = str.split('')
     let final = new Set(lower)
