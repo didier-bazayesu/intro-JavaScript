@@ -9,3 +9,4 @@ function longest(s1, s2) {
     return arr.filter((elem, index) => {
         return arr.indexOf(elem) == index
     }).sort().join('')}
+'https://www.codewars.com/kata/534d0a229345375d520006a0/train/javascript'
