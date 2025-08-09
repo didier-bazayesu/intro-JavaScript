@@ -39,3 +39,4 @@ function alphabetPosition(text) {
 
     return final.trim();
 }
+
