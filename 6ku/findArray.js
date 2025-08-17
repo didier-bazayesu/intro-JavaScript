@@ -8,3 +8,5 @@ function findArray(arr1, arr2) {
     }
     return array.filter(elem => elem !== undefined)
 }
+
+'https://www.codewars.com/kata/58cc070abd22e324b300002a/train/javascript'
