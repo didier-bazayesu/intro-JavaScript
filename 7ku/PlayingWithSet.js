@@ -7,3 +7,4 @@ function areEqual(s1, s2) {
 function notEqual(s1, s2) {
     return !areEqual(s1, s2)
 }
+'https://www.codewars.com/kata/5884e9ccf72916207900010f'
