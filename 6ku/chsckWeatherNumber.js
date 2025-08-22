@@ -6,3 +6,5 @@ function validateBase(num, base) {
 
 
 }
+
+'https://www.codewars.com/kata/563a8656d52a79f06c00001f/train/javascript'
