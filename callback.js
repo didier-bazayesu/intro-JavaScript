@@ -5,6 +5,8 @@ function handleCallBack(name, age, greet) {
 
 const callback = (name, age) => {
     console.log(`${name.toUpperCase()} has ${age} Years old`);
+
+    
 };
 
 handleCallBack('didier', 35, callback)
