@@ -10,9 +10,5 @@ function returnHelloWord() {
         }
     }
 }
-const a = returnHelloWord();
-const b = a();
-const c = b();
-const d = c();
-const e = d();
-console.log(e)
+const a = returnHelloWord()()()()();
+console.log(a);
